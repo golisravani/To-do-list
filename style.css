@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right, #f55c7a, #f6bc66);
+}
+.container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    padding: 2rem;
+    
+}
+.todo-app{
+   align-items: center;
+    background-color: transparent;
+    border: none;
+    border-radius:  80px 20px 50px 20px;
+    width: 80vh;
+min-height: 70vh;
+padding: 10px;
+background-color: #ffffff66;
+box-shadow: 30px 30px 20px #f55c7b57;
+}
+.container h1{
+    text-align: center;
+    color: #FE5852 ;
+  font-family: "Leckerli One", cursive;
+
+}
+.input-area{
+    align-items: center;
+    display: flex;
+    justify-content:center;
+    padding: 1rem;
+    font-size: 10px;
+}
+#input-field{
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+    margin-right: 5px;
+    outline: none;
+    font-family: "Leckerli One", cursive;
+    font-size: 18px;
+    color: rgb(84, 0, 29);
+
+}
+.btn{
+    border: none;
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #f55c7a;
+    color: white;   
+    font-family: "Leckerli One", cursive;
+}
+.btn:hover{
+    color: #f55c7a;
+    background-color: #ffffff;
+        cursor: pointer;
+}
+ul li{
+    margin-top: 10px;
+    list-style: none;
+    padding: 12px 8px 12px 50px;   
+     user-select: none;
+    cursor: pointer;
+    color: rgb(84, 0, 29);
+    position: relative;   
+    font-size: 20px;
+    font-family: "Leckerli One", cursive;
+    background-color: rgba(255, 255, 255, 0.381);
+    border-radius: 40px;
+   display: flex;
+   justify-content: space-between;
+   min-width: none;
+   border-bottom:3px solid #ae3e54;
+   transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+ul li::before {
+content: " ";
+position: absolute;
+background-image: url(./unchecked.png);
+height: 28px;
+width: 28px;
+border-radius: 50%;
+background-size: cover;
+background-position: center;
+top: 50%; 
+left: 10px;
+transform: translateY(-50%);
+}
+
+ul li.checked{
+ text-decoration: line-through;
+ color: #5b5a5a;
+ font-size: 16px;
+}
+ul li.checked::before{
+ background-image: url(./checked.png);
+}
+ul li i:hover{
+ background-color: #646464ad;
+ color: rgb(84, 0, 29);
+}
+ul li.slide {
+    transform: translateX(10rem); 
+    opacity: 0; 
+}
